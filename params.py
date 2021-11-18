@@ -2,8 +2,8 @@ import torch
 
 class HParams():
     def __init__(self):
-        self.encoder_len = 500
-        self.decoder_len = 70
+        self.encoder_len = 512 #768 #512 #7128
+        self.decoder_len = 350
         self.max_vocab_size = 30000
         self.batch_size = 16 if torch.cuda.is_available() else 8
         self.num_layers = 6
